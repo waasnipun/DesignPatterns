@@ -1,4 +1,4 @@
-package Facade;
+package Structural.Facade;
 
 import java.sql.Driver;
 

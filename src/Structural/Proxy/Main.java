@@ -1,4 +1,4 @@
-package Proxy;
+package Structural.Proxy;
 
 import java.util.Objects;
 

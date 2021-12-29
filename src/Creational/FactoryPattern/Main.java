@@ -1,4 +1,4 @@
-package FactoryPattern;
+package Creational.FactoryPattern;
 
 
 abstract class Vehicle{
