@@ -39,6 +39,7 @@ class SavingsAccount extends Account{
     }
 }
 
+//Mixing of two individual classes
 class CompositeAccount extends Account{
 
     private float totalBalance;
