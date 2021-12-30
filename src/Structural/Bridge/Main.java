@@ -1,10 +1,6 @@
 package Structural.Bridge;
 
 abstract class TV{
-    Remote remote;
-    TV(Remote r){
-        this.remote = r;
-    }
     abstract void on();
     abstract void off();
 }
@@ -12,7 +8,6 @@ abstract class TV{
 class Sony extends TV{
     Remote remoteType;
     Sony(Remote r){
-        super(r);
         this.remoteType = r;
     }
 
@@ -32,7 +27,6 @@ class Sony extends TV{
 class Philips extends TV{
     Remote remoteType;
     Philips(Remote r){
-        super(r);
         this.remoteType = r;
     }
 
@@ -58,12 +52,12 @@ class OldRemote implements Remote{
 
     @Override
     public void on() {
-        System.out.println("On with Old remote");
+        System.out.println("On with old remote");
     }
 
     @Override
     public void off() {
-        System.out.println("Off with Old remote");
+        System.out.println("Off with old remote");
     }
 }
 
@@ -71,12 +65,12 @@ class NewRemote implements Remote{
 
     @Override
     public void on() {
-        System.out.println("On with New remote");
+        System.out.println("On with new remote");
     }
 
     @Override
     public void off() {
-        System.out.println("Off with New remote");
+        System.out.println("Off with new remote");
     }
 }
 
