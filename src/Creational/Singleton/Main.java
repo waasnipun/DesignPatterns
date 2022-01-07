@@ -16,7 +16,10 @@ class Singleton{
 
     private static Singleton instance;
 
-    private Singleton(){}
+
+    private Singleton(){
+        System.out.println("instance created");
+    }
 
     public static Singleton getInstance(){
         if(instance == null){
@@ -26,17 +29,17 @@ class Singleton{
     }
 
 
-
 }
 
 public class Main {
 
     public static void main(String[] args) {
 
-        SingletonEagar instance_1 = SingletonEagar.getInstance();
-        System.out.print(instance_1);
+        Singleton instance_1 = Singleton.getInstance();
+        System.out.println(instance_1);
 
-        SingletonEagar instance_2 = SingletonEagar.getInstance();
+
+        Singleton instance_2 = Singleton.getInstance();
         System.out.println(instance_2);
 
     }
